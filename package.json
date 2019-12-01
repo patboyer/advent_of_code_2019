@@ -1,0 +1,19 @@
+{
+  "name": "advent_of_code_2019",
+  "version": "1.0.0",
+  "description": "Advent of Code 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patboyer/advent_of_code_2019.git"
+  },
+  "author": "Pat Boyer <pboyer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patboyer/advent_of_code_2019/issues"
+  },
+  "homepage": "https://github.com/patboyer/advent_of_code_2019#readme"
+}
