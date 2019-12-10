@@ -31,11 +31,13 @@ expect(calculateFuelA(12)).to.be.equal(2);
 expect(calculateFuelA(14)).to.be.equal(2);
 expect(calculateFuelA(1969)).to.be.equal(654);
 expect(calculateFuelA(100756)).to.be.equal(33583);
+expect(solveA([ 12, 14, 1969, 100756])).to.be.equal(34241);
 
 expect(calculateFuelB(12)).to.be.equal(2);
 expect(calculateFuelB(14)).to.be.equal(2);
 expect(calculateFuelB(1969)).to.be.equal(966);
 expect(calculateFuelB(100756)).to.be.equal(50346);
+expect(solveB([ 12, 14, 1969, 100756])).to.be.equal(51316);
 
 const input = Utils.readFileToIntegers("input/day01.txt");
 console.log(`Day 01 A: ${ solveA(input) }`);  //= 3295206
