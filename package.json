@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/patboyer/advent_of_code_2019/issues"
   },
-  "homepage": "https://github.com/patboyer/advent_of_code_2019#readme"
+  "homepage": "https://github.com/patboyer/advent_of_code_2019#readme",
+  "devDependencies": {
+    "chai": "^4.2.0"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
 }
