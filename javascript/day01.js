@@ -39,6 +39,6 @@ expect(calculateFuelB(1969)).to.be.equal(966);
 expect(calculateFuelB(100756)).to.be.equal(50346);
 expect(solveB([ 12, 14, 1969, 100756])).to.be.equal(51316);
 
-const input = Utils.readFileToIntegers("input/day01.txt");
+const input = Utils.readFileToIntegers("day01.txt");
 console.log(`Day 01 A: ${ solveA(input) }`);  //= 3295206
 console.log(`Day 01 B: ${ solveB(input) }`);  //= 4939939
