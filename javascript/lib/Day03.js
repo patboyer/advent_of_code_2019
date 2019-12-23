@@ -50,7 +50,7 @@ const solveB = (wires) => {
 
   const intersections = R.pipe(
     R.map(buildWire),
-    R.curry(findIntersections),
+    R.curry(findIntersections)
   )(wires);
 
   return R.pipe(
