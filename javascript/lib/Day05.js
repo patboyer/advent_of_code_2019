@@ -43,7 +43,7 @@ const runProgram = (instructions, input) => {
         idx += 4;
         break;
       case 3:
-        instr[param1] = input;
+        instr[param1] = input.shift();
         idx += 2;
         break;
       case 4:
