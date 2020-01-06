@@ -9,6 +9,7 @@ class Photo {
     this.height    = height;
     this.width     = width;
     this.layers    = sif.match(regex);
+    console.log(this.layers);
     this.image     = this.render();
   }
 
@@ -28,24 +29,14 @@ class Photo {
   }
 
   render() {
-    let result = "";
+    const fn = R.zipWith((a, b) => (a === '2') ? b : a);
+    const transparentLayer = Array(this.layerSize).fill('2');
 
-    for (let i=0; i<this.layerSize; i++) {
-      let c;
-
-      for (let j=0; j<this.layers.length; j++) {
-        c = this.layers[j][i];
-
-        if (c === '2')
-          continue;
-        else
-          break;
-      }
-
-      result += c;
-    }
-
-    return result;
+    return R.pipe(
+      R.map(R.split("")),
+      R.reduce(fn, transparentLayer),
+      R.join("")
+    )(this.layers);
   }
 
   toString() {
